@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  margin: 0 auto;
+  /* margin-top: 10rem; */
+  padding: 12rem 3.2rem 0 3.2rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: 2px solid #133e96;
+  color: #133e96;
+
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #fff;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e8eefb;
+}
+
+.secondary-heading {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.secondary-heading::after {
+  content: "";
+  display: block;
+
+  height: 2px;
+  width: 500px;
+  background-color: #17387c;
+}
+
+.secondary-heading-text {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #17387c;
+}
+
+.section-description {
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+.experience-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+.experience-img {
+  height: 25rem;
+  display: block;
+}
+
+.experience-img-box {
+  justify-self: center;
+  align-self: center;
+}
+
+.tertiary-heading {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #17387c;
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #17387c;
+  margin-bottom: 1rem;
+}
+
+.experience-list {
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: 1.1px;
+  margin-left: 20px;
+}
+
+.experience-list-item {
+  margin-bottom: 1rem;
+}
